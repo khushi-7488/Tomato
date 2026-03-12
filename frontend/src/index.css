@@ -5,3 +5,10 @@
   font-family: Outfit;
   scroll-behavior: smooth;
 }
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
