@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stacks Caption and Menu-List vertically */
+  gap: 2rem;
+}
+
+.menu-list {
+  display: flex;          /* This makes the images go horizontal */
+  flex-direction: row;    /* Explicitly set to row */
+  gap: 30px;              /* Space between images */
+  overflow-x: auto;       /* Allows scrolling if items overflow */
+  padding-bottom: 10px;   /* Space for a scrollbar if needed */
+}
+
+.menu-item img {
+  width: 100px;           /* Adjust size as needed */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;     /* Optional: makes them circular */
+}
+.menu-item  .active{
+    border: 4px solid tomato;
+}
