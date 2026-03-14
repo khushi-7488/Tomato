@@ -1,0 +1,25 @@
+.food-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.5rem;
+  column-gap: 1.2rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+
+.food-details {
+  width: 23%;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+.food-details > img {
+  width: 98.5%;
+  outline: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}

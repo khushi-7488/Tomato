@@ -2,22 +2,39 @@
   display: flex;
   flex-direction: column; /* Stacks Caption and Menu-List vertically */
   gap: 2rem;
+  border-bottom: 2px solid rgb(203, 199, 199);
+  margin-bottom: 30px;
 }
 
 .menu-list {
-  display: flex;          /* This makes the images go horizontal */
-  flex-direction: row;    /* Explicitly set to row */
-  gap: 30px;              /* Space between images */
-  overflow-x: auto;       /* Allows scrolling if items overflow */
-  padding-bottom: 10px;   /* Space for a scrollbar if needed */
+  display: flex; /* This makes the images go horizontal */
+  flex-direction: row; /* Explicitly set to row */
+  gap: 30px; /* Space between images */
+  overflow-x: auto; /* Allows scrolling if items overflow */
+  padding-bottom: 10px; /* Space for a scrollbar if needed */
 }
 
 .menu-item img {
-  width: 100px;           /* Adjust size as needed */
-  height: 100px;
+  width: 110px; /* Adjust size as needed */
+  height: 110px;
   object-fit: cover;
-  border-radius: 50%;     /* Optional: makes them circular */
+  border-radius: 50%; /* Optional: makes them circular */
+  margin-bottom: auto;
 }
-.menu-item  .active{
-    border: 4px solid tomato;
+.menu-item .active {
+  border: 4px solid tomato;
+}
+.caption p {
+  width: 65%;
+  font-size: 17px;
+  margin-top: 30px;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
