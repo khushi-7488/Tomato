@@ -1,10 +1,10 @@
 import { createContext, StoreContext, useState } from "react";
+import { food_list } from "../assets/assets"
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    const [foodList, setFoodList] = useState("");
     const contextValue = {
-        foodList, setFoodList
+        food_list
     }
 }
 return (
