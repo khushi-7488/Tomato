@@ -67,3 +67,16 @@
   display: flex;
   justify-content: space-between;
 }
+.add_cart {
+  display: flex;
+  object-fit: contain;
+  /* width: 10%; */
+}
+.add_cart img {
+  display: flex;
+  margin-bottom: 100px;
+  height: 32px;
+}
+.add_cart p {
+  margin-top: 10px;
+}

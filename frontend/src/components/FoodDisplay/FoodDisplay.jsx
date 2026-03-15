@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FoodDisplay.css";
 import { assets } from "../../assets/assets.js";
 import { food_list } from "../../assets/assets.js";
 
-const FoodDisplay = () => {
+const FoodDisplay = ({ id, name, price, description, image }) => {
+  const [cartItems, setCartItems] = useState(0);
   return (
     <div>
       <h1>Top dishes near you</h1>
@@ -17,7 +18,41 @@ const FoodDisplay = () => {
             </div>
             <p className="description">{item.description}</p>
             <div className="add_icon">
-              <img className="add" src={assets.add_icon_white} alt="" />
+              {!cartItems[item._id] ? (
+                <img
+                  onClick={() =>
+                    setCartItems((prev) => ({ ...prev, [item._id]: 1 }))
+                  }
+                  className="add"
+                  src={assets.add_icon_white}
+                  alt=""
+                />
+              ) : (
+                <div className="add_cart">
+                  <img
+                    onClick={() =>
+                      setCartItems((prev) => ({
+                        ...prev,
+                        [item._id]: prev[item._id] + 1,
+                      }))
+                    }
+                    src={assets.add_icon_green}
+                    alt=""
+                  />
+                  <p>{cartItems[item._id]}</p>
+
+                  <img
+                    onClick={() =>
+                      setCartItems((prev) => ({
+                        ...prev,
+                        [item._id]: prev[item._id] - 1,
+                      }))
+                    }
+                    src={assets.remove_icon_red}
+                    alt=""
+                  />
+                </div>
+              )}
               <p className="price">${item.price}</p>
             </div>
           </div>
