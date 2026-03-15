@@ -11,15 +11,60 @@
 .food-details {
   width: 23%;
   position: relative;
+  height: 370px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
-
 
 .food-details > img {
   width: 98.5%;
   outline: none;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.description {
+  font-size: 14px;
+  color: grey;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+.price {
+  color: rgb(226, 73, 46);
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+.name {
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+.ratings {
+  width: 70px;
+  height: 15px;
+  position: relative;
+}
+.rating {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.add {
+  width: 38px;
+  position: relative;
+    margin-left: 15px;
+  margin-bottom: 35px;
+
+}
+.add_icon {
+    height: 72px; 
+    width: 250px; 
+  margin-right: 50px;
+  margin-bottom: 100px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  
 }

@@ -11,10 +11,15 @@ const FoodDisplay = () => {
         {food_list.map((item, index) => (
           <div className="food-details" key={index}>
             <img src={item.image} alt="" />
-            <h3>{item.name}</h3>
-            <p>{item.category}</p>
-            <p>${item.price}</p>
-            <p>{item.description}</p>
+            <div className="rating">
+              <h3 className="name">{item.name}</h3>
+              <img className="ratings" src={assets.rating_starts} alt="" />
+            </div>
+            <p className="description">{item.description}</p>
+            <div className="add_icon">
+              <img className="add" src={assets.add_icon_white} alt="" />
+              <p className="price">${item.price}</p>
+            </div>
           </div>
         ))}
       </div>
