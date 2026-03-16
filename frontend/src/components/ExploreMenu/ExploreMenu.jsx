@@ -5,7 +5,7 @@ import { menu_list } from "../../assets/assets.js";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
-    <div className="container">
+    <div className="content">
       <div className="caption">
         <h1>Explore Menu</h1>
         <p>

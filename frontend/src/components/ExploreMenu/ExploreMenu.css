@@ -1,15 +1,15 @@
-.container {
+.content {
   display: flex;
   flex-direction: column; /* Stacks Caption and Menu-List vertically */
   gap: 2rem;
   border-bottom: 2px solid rgb(203, 199, 199);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .menu-list {
   display: flex; /* This makes the images go horizontal */
   flex-direction: row; /* Explicitly set to row */
-  gap: 30px; /* Space between images */
+  gap: 44px; /* Space between images */
   overflow-x: auto; /* Allows scrolling if items overflow */
   padding-bottom: 10px; /* Space for a scrollbar if needed */
 }
