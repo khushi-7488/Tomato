@@ -7,7 +7,7 @@ const FoodDisplay = ({ category }) => {
   const [cartItems, setCartItems] = useState(0);
 
   return (
-    <div>
+    <div id="food_display">
       <h1>Top dishes near you</h1>
       <div className="food-container">
         {food_list.map((item, index) => {

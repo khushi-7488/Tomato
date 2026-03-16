@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 
 const AppDownload = () => {
   return (
-    <div className="containers">
+    <div className="containers" id="app_download">
       <div className="app_download">
         <h1 className="suggetion">For Better Experience Download</h1>
         <h1 className="suggetions">Tomato App</h1>

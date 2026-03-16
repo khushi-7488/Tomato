@@ -1,0 +1,39 @@
+.footer {
+  background-color: #323232;
+  height: 400px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #d9d9d9;
+  display: flex;
+}
+.about {
+  width: 60vw;
+  margin-top: 60px;
+  margin-left: 170px;
+}
+.about p {
+  margin-top: 30px;
+}
+.icon {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+.company {
+  width: 30vw;
+  margin-left: 150px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact {
+  width: 27vw;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  gap: 10px;
+}

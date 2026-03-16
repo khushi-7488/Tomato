@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 4px;
+  margin: 2px;
 }
 
 .container {
@@ -20,12 +20,17 @@
   gap: 15px;
   right: 50px;
 }
-.list li {
+.list a {
   list-style-type: none;
   font-size: 20px;
   padding: 10px;
   color: #49557e;
-
+}
+.list Link {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px;
+  color: #49557e;
 }
 .search {
   display: flex;
@@ -34,7 +39,7 @@
   gap: 40px;
 }
 .search i {
-font-size: 28px;
+  font-size: 28px;
 }
 .search button {
   padding: 10px;

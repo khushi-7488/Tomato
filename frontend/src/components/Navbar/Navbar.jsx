@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [bar, setBar] = useState("home");
@@ -9,34 +10,40 @@ const Navbar = () => {
     <div>
       <div className="container">
         <div className="logo">
-          <img src={assets.logo} alt="" />
+          <Link to="/">
+            <img src={assets.logo} alt="" />
+          </Link>
         </div>
         <div className="options">
           <ul className="list">
-            <li
+            <Link
+              to="/"
               onClick={() => setBar("home")}
               className={bar === "home" ? "active" : ""}
             >
               home
-            </li>
-            <li
+            </Link>
+            <a
+              href="#food_display"
               onClick={() => setBar("menu")}
               className={bar === "menu" ? "active" : ""}
             >
               menu
-            </li>
-            <li
+            </a>
+            <a
+              href="#app_download"
               onClick={() => setBar("mobile-app")}
               className={bar === "mobile-app" ? "active" : ""}
             >
               mobile-app
-            </li>
-            <li
+            </a>
+            <a
+              href="#app_download"
               onClick={() => setBar("contact-us")}
               className={bar === "contact-us" ? "active" : ""}
             >
               contact-us
-            </li>
+            </a>
           </ul>
         </div>
         <div className="search">
