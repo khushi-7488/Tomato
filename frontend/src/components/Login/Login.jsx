@@ -2,14 +2,23 @@ import React from "react";
 import "./Login.css";
 import { useState } from "react";
 
-const Login = () => {
+const Login = ({ showLogin, setShowLogin }) => {
   const [currState, setCurrentState] = useState("Sign up");
 
   return (
     <div className="login">
       <form action="" className="form">
         <div className="card">
-          <h2>{currState}</h2>
+          <div className="logintitle">
+            <h2>{currState}</h2>
+            <p
+              onClick={() => {
+                setShowLogin(false);
+              }}
+            >
+              X
+            </p>
+          </div>
           {currState === "Login" ? (
             <></>
           ) : (

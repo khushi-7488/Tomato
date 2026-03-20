@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import { food_list } from "../../assets/assets";
 import { StoreContext } from "../../Context/StoreContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, setCartItems, getCartAmount } = useContext(StoreContext);
@@ -60,7 +61,9 @@ const Cart = () => {
             <p>total</p>
             <p>${getCartAmount() === 0 ? 0 : getCartAmount() + 5}</p>
           </div>
-          <button className="payment">Proceed To Checkout</button>
+          <Link to="/orders">
+            <button className="payment">Proceed To Checkout</button>
+          </Link>
         </div>
       ) : (
         <h3 id="empty">Your Cart Is Empty !!</h3>

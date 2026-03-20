@@ -53,10 +53,10 @@
   padding: 9px;
 }
 .payment {
-  /* margin-left: 9px; */
   margin-top: 9px;
   padding: 10px;
   width: 220px;
+  cursor: pointer;
   border-radius: 5px;
   background-color: rgb(253, 127, 81);
   border: none;

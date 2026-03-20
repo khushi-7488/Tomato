@@ -45,3 +45,7 @@
 .login-popup-condition p {
   margin-top: 17px;
 }
+.logintitle {
+  display: flex;
+  justify-content: space-between;
+}
