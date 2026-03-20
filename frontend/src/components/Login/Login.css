@@ -35,7 +35,7 @@
   border-radius: 4px;
   padding: 10px;
   border: 1px solid #c9c9c9;
-  background-color: orange;
+  background-color: rgb(242, 138, 3);
 }
 .login-popup-condition {
   display: flex;
