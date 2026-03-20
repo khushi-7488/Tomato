@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
@@ -17,6 +18,7 @@ function App() {
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
         </Routes>
       </div>
       <Footer />

@@ -48,7 +48,9 @@ const Navbar = ({ setShowLogin }) => {
         </div>
         <div className="search">
           <img src={assets.search_icon} alt="" />
-          <i class="fa-solid fa-cart-shopping"></i>
+          <Link to="/cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </Link>
           <button
             onClick={() => {
               setShowLogin(true);

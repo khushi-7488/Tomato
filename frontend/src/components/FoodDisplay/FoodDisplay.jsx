@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import "./FoodDisplay.css";
 import { assets } from "../../assets/assets.js";
 import { food_list } from "../../assets/assets.js";
+import { StoreContext } from "../../Context/StoreContext.jsx";
 
 const FoodDisplay = ({ category }) => {
-  const [cartItems, setCartItems] = useState(0);
-
+  const { cartItems, setCartItems } = useContext(StoreContext);
   return (
     <div id="food_display">
       <h1>Top dishes near you</h1>
