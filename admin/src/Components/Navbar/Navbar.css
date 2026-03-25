@@ -1,0 +1,11 @@
+.nav {
+  right: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container {
+}
+#logo {
+  height: 50px;
+  width: 120px;
+}
