@@ -1,12 +1,18 @@
 .nav {
-  right: 100;
   display: flex;
   justify-content: space-between;
 }
 .nav-container {
+  border-bottom: 1px solid grey;
+  padding: 8px 4%;
 }
 
 #logo {
-  height: 50px;
-  width: 120px;
+  height: 60px;
+  width: 140px;
+}
+#profile {
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
 }

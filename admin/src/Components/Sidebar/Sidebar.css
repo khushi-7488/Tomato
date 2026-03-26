@@ -1,0 +1,28 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 15%;
+  border-right: 1px solid grey;
+  margin-left: 55px;
+  padding-block: 55px;
+  height: 90vh;
+}
+
+#sidebar-items {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  align-items: center;
+  border: 1px solid grey;
+  border-right: none;
+  padding: 10px;
+  cursor: pointer;
+}
+h3 {
+  font-weight: 300;
+  color: rgb(17, 12, 12);
+}
+.active {
+  color: tomato;
+}
