@@ -19,7 +19,7 @@ const Sidebar = () => {
           <h3 className={color === "List items" ? "active" : ""}>List items</h3>
         </div>
       </Link>
-      <Link to="/orders" onClick={() => setColour("Orders")}>
+      <Link to="/order" onClick={() => setColour("Orders")}>
         <div id="sidebar-items">
           <img src={assets.order_icon} alt="" />
           <h3 className={color === "Orders" ? "active" : ""}>Orders</h3>

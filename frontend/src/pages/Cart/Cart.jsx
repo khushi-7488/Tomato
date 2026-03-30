@@ -61,7 +61,7 @@ const Cart = () => {
             <p>total</p>
             <p>${getCartAmount() === 0 ? 0 : getCartAmount() + 5}</p>
           </div>
-          <Link to="/orders">
+          <Link to="/order">
             <button className="payment">Proceed To Checkout</button>
           </Link>
         </div>
