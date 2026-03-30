@@ -28,3 +28,6 @@ textarea {
 .add-button {
   cursor: pointer;
 }
+.add-container img {
+  width: 120px;
+}

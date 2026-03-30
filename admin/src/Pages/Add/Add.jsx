@@ -17,7 +17,7 @@ const Add = () => {
     setData((data) => ({ ...data, [name]: value }));
   };
   const onSubmitHandler = async (event) => {
-    // event.preventDefault();
+    event.preventDefault();
   };
   // useEffect(() => {
   //   console.log(data);
@@ -30,12 +30,16 @@ const Add = () => {
           <h3>Upload image</h3>
           <label htmlFor="image">
             <img
-              onClick={() => setImage(true)}
-              src={assets.upload_area}
+              src={image ? URL.createObjectURL(image) : assets.upload_area}
               alt=""
             />
           </label>
-          <input type="file" id="image" hidden />
+          <input
+            onChange={(e) => setImage(e.target.files[0])}
+            type="file"
+            id="image"
+            hidden
+          />
           <h3>Product Name</h3>
           <input
             onChange={onChangeHandler}
