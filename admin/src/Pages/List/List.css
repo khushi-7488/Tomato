@@ -1,0 +1,31 @@
+.list-containers {
+  width: 100%;
+  padding: 55px;
+}
+
+.list-items {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 0.5fr;
+  margin-top: 30px;
+  border: 2px solid rgb(177, 175, 175);
+  padding: 10px;
+  background-color: rgb(248, 243, 243);
+}
+.list-items p {
+  font-size: 15px;
+}
+.list-containers img {
+  width: 40px;
+}
+.item-class {
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 0.5fr;
+  border: 1px solid rgb(177, 175, 175);
+}
+.cross {
+  cursor: pointer;
+}
