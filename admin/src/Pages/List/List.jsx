@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./List.css";
 import axios from "axios";
 
-const List = () => {
-  const url = "http://localhost:4080";
-
+const List = ({ url }) => {
   const [list, setList] = useState([]);
 
   const fetchList = async () => {

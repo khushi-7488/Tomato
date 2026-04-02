@@ -8,15 +8,17 @@ import List from "./Pages/List/List.jsx";
 import Order from "./Pages/Order/Order.jsx";
 
 function App() {
+  const url = "http://localhost:4080";
+
   return (
     <>
       <Navbar />
       <div className="admin-container">
         <Sidebar />
         <Routes>
-          <Route path="/add" element={<Add />} />
-          <Route path="/list" element={<List />} />
-          <Route path="/order" element={<Order />} />
+          <Route path="/add" element={<Add url={url} />} />
+          <Route path="/list" element={<List url={url} />} />
+          <Route path="/order" element={<Order url={url} />} />
         </Routes>
       </div>
     </>
