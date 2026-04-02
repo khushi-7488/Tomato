@@ -16,11 +16,11 @@
   font-size: 15px;
 }
 .list-containers img {
-  width: 40px;
+  width: 70px;
 }
 .item-class {
   align-items: center;
-  padding: 10px;
+  padding: 7px;
   width: 90%;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr 0.5fr;

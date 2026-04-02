@@ -19,13 +19,15 @@ const List = () => {
     fetchList();
   }, []);
 
-  // const removeList = async (foodId) => {
-  //   const response = axios.post(`${url}/api/food/remove`, { id: foodId });
-  //   if (response.data.success) {
-  //     setList([]);
-  //   }
-  // };
-
+  const removeFood = async (foodId) => {
+    const response = await axios.post(`${url}/api/food/remove`, { id: foodId });
+    await fetchList();
+    if (response.data.success) {
+      toast.success(response.data.message);
+    } else {
+      toast.error("Error");
+    }
+  };
   return (
     <div className="list-containers">
       <h3>All food list</h3>
@@ -43,8 +45,8 @@ const List = () => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>{item.price}</p>
-              <p onClick={removeList} className="cross">
+              <p>${item.price}</p>
+              <p className="cross" onClick={() => removeFood(item._id)}>
                 x
               </p>
             </div>
